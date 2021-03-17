@@ -1,0 +1,9 @@
+- hosts: all
+  become: true
+  vars:
+    - pri_domain_name: 'test.vagrant.local'
+  roles:
+    - role: ansible-apache2
+    - role: ansible-mariadb-mysql
+    - role: ansible-observium
+  tasks:
