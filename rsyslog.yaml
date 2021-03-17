@@ -1,0 +1,7 @@
+- name: rsyslog
+  hosts: all
+
+  roles:
+    - role: sansible.rsyslog
+      sansible_rsyslog_app_name: default_app
+      sansible_rsyslog_default_config: no
